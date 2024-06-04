@@ -5,18 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>com.batch11_Cucumber</artifactId>
+    <artifactId>Mersys_Internship_Project</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-
-
     <dependencies>
+
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -44,7 +43,6 @@
             <version>7.15.0</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -70,6 +68,7 @@
             <artifactId>extentreports</artifactId>
             <version>5.0.9</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
         <dependency>
             <groupId>tech.grasshopper</groupId>
@@ -77,13 +76,6 @@
             <version>1.14.0</version>
         </dependency>
 
-
-
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>5.2.2</version>
-        </dependency>
 
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -108,6 +100,9 @@
             <artifactId>opencsv</artifactId>
             <version>5.7.1</version>
         </dependency>
+
+
+
 
 
 
