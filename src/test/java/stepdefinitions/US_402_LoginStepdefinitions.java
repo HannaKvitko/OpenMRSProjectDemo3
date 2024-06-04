@@ -15,6 +15,7 @@ public class US_402_LoginStepdefinitions {
     public void navigate_to_webpage() {
         DriverClass.getDriver().get("https://openmrs.org/");
         page.waitTime(2);
+
     }
 
     @When("user clicks on the DEMO button")

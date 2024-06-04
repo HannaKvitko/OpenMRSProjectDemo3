@@ -28,6 +28,7 @@ import java.awt.AWTException;
 
 public class CommonMethods {
 
+
     public CommonMethods() {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }

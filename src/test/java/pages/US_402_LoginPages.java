@@ -18,6 +18,7 @@ public class US_402_LoginPages extends CommonMethods {
     @FindBy(xpath = "//input[@id='username']")
     public WebElement usernameTextBox;
 
+
     @FindBy(xpath = "//button[normalize-space()='Continue']")
     public WebElement ContinueButton;
 

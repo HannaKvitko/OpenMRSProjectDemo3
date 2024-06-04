@@ -21,6 +21,7 @@ public class DriverClass {
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         }
         return driver;
+
     }
     public static void  quitDriver(){
         if (driver==null){
