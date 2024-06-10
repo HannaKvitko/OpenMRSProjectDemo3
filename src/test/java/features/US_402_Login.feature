@@ -3,8 +3,6 @@ Feature: OpenMRS Demo Login Functionality
 
   Scenario: Successful login with valid credentials
 
-
-
     Given Navigate to webpage
     When user clicks on the DEMO button
     Then user selects Explore OpenMRS 3

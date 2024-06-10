@@ -85,6 +85,12 @@ public class CommonMethods {
 
     }
 
+    public void clearAndSendKeys(WebElement element, String key) {
+        element.clear(); // Clears the current value in the WebElement
+        element.sendKeys(key); // Sends the new value to the WebElement
+    }
+
+
     public void actionClick(WebElement element) {
         Actions action = new Actions(DriverClass.getDriver());
         action.moveToElement(element).click(element).build().perform();
