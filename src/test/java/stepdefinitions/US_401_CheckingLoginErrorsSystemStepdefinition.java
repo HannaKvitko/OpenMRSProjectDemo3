@@ -38,7 +38,7 @@ public class US_401_CheckingLoginErrorsSystemStepdefinition {
     @Then("the user sees a {string} warning")
     public void the_user_sees_a_warning(String string) {
         error.clickJSExecutor(error.sentPassword);
-        error.waitTime(1);
+        error.waitTime(2);
         error.sendKeys(error.sentPassword, "just");
         error.waitTime(1);
 
