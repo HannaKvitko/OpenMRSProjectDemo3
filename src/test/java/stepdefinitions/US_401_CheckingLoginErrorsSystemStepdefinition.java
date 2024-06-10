@@ -11,7 +11,7 @@ public class US_401_CheckingLoginErrorsSystemStepdefinition {
     @Given("the user navigates to the home page")
     public void the_user_navigates_to_the_home_page() {
         DriverClass.getDriver().get("https://openmrs.org/");
-        error.waitTime(1);
+        error.waitTime(2);
     }
     @When("the user selects {string}  {string}  {string}")
     public void the_user_selects(String string, String string2, String string3) {
@@ -19,6 +19,7 @@ public class US_401_CheckingLoginErrorsSystemStepdefinition {
         error.waitTime(1);
         error.scrollToElement(error.ExploreOpenMRS);
         error.waitTime(1);
+
 
     }
     @Then("the user is on the login page")
