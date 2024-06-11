@@ -13,54 +13,28 @@ public class US_401_CheckingLoginErrorsSystemStepdefinition {
         DriverClass.getDriver().get("https://openmrs.org/");
         error.waitTime(1);
     }
-    @When("the user selects {string}  {string}  {string}")
-    public void the_user_selects(String string, String string2, String string3) {
+    @When("the user selects Enter the OpenMRS3 Demo")
+    public void the_user_selects_enter_the_open_mrs3_demo() {
         error.clickJSExecutor(error.demoButton);
         error.waitTime(1);
-        error.scrollToElement(error.ExploreOpenMRS);
+        error.scrollToElement(error.ExploreOpenMRS3);
         error.waitTime(1);
-
     }
-    @Then("the user is on the login page")
-    public void the_user_is_on_the_login_page() {
-        error.clickJSExecutor(error.ExploreOpenMRS);
+    @When("the user enters invalid credentials and clicksLogin")
+    public void the_user_enters_invalid_credentials_and_clicks_login() {
+        error.clickJSExecutor(error.ExploreOpenMRS3);
         error.waitTime(1);
-
     }
-    @When("the user enters invalid credentials and clicks {string}")
-    public void the_user_enters_invalid_credentials_and_clicks(String string) {
+    @When("the user enters valid credentials")
+    public void the_user_enters_valid_credentials() {
         error.clickJSExecutor(error.sentUsername);
         error.waitTime(1);
         error.sendKeys(error.sentUsername, "just");
         error.waitTime(1);
-
-    }
-    @Then("the user sees a {string} warning")
-    public void the_user_sees_a_warning(String string) {
-        error.clickJSExecutor(error.sentPassword);
-        error.waitTime(2);
-        error.sendKeys(error.sentPassword, "just");
-        error.waitTime(1);
-
-    }
-    @When("the user selects {string} and enters invalid credentials again")
-    public void the_user_selects_and_enters_invalid_credentials_again(String string) {
-        error.clickJSExecutor(error.inpatientWord);
-        error.waitTime(1);
-
-    }
-    @Then("the user sees an {string} warning")
-    public void the_user_sees_an_warning(String string) {
-        error.clickJSExecutor(error.loginButton);
-        error.waitTime(1);
-        error.waitUntilVisible(error.visible);
-    }
-    @When("the user enters valid credentials")
-    public void the_user_enters_valid_credentials() {
-
     }
     @Then("the user logs in successfully")
     public void the_user_logs_in_successfully() {
+        error.clickJSExecutor(error.sentContinue);
 
     }
 
